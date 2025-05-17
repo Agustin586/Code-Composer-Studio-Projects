@@ -53,6 +53,14 @@
 #include "board.h"
 #include "c2000ware_libraries.h"
 
+// Includes:
+#include "include/SignalManager.h"
+
+SignalManager_t* Signal;
+
+// Private
+static void Blink();
+
 //
 // Main
 //
@@ -96,11 +104,22 @@ void main(void)
     EINT;
     ERTM;
 
+    // Configuracion de la señal
+    SignalManager_Init(Signal);
+
     while(1)
     {
-        GPIO_togglePin(Led_Blink);
-        DEVICE_DELAY_US(500000);
+        //Blink();
+        SignalManager_TestSinePwm(Signal);
     }
+}
+
+static void Blink()
+{
+    GPIO_togglePin(Led_Blink);
+    DEVICE_DELAY_US(500000);
+
+    return;
 }
 
 //

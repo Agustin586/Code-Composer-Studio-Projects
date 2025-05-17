@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "TP_CONVERTIDORES_DSP",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "TP_CONVERTIDORES_DSP",
+                "resourceId": "/TP_CONVERTIDORES_DSP"
+            }
+        }
+    ]
+}

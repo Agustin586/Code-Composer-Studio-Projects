@@ -57,10 +57,45 @@ extern "C"
 // PinMux Configurations
 //
 //*****************************************************************************
+
+//
+// EPWM1 -> Pwm_FPB Pinmux
+//
+//
+// EPWM1A - GPIO Settings
+//
+#define GPIO_PIN_EPWM1A 0
+#define Pwm_FPB_EPWMA_GPIO 0
+#define Pwm_FPB_EPWMA_PIN_CONFIG GPIO_0_EPWM1A
+//
+// EPWM1B - GPIO Settings
+//
+#define GPIO_PIN_EPWM1B 1
+#define Pwm_FPB_EPWMB_GPIO 1
+#define Pwm_FPB_EPWMB_PIN_CONFIG GPIO_1_EPWM1B
 //
 // GPIO31 - GPIO Settings
 //
 #define Led_Blink_GPIO_PIN_CONFIG GPIO_31_GPIO31
+
+//*****************************************************************************
+//
+// EPWM Configurations
+//
+//*****************************************************************************
+#define Pwm_FPB_BASE EPWM1_BASE
+#define Pwm_FPB_TBPRD 2500
+#define Pwm_FPB_COUNTER_MODE EPWM_COUNTER_MODE_UP_DOWN
+#define Pwm_FPB_TBPHS 0
+#define Pwm_FPB_CMPA 1250
+#define Pwm_FPB_CMPB 0
+#define Pwm_FPB_CMPC 0
+#define Pwm_FPB_CMPD 0
+#define Pwm_FPB_DBRED 0
+#define Pwm_FPB_DBFED 0
+#define Pwm_FPB_TZA_ACTION EPWM_TZ_ACTION_HIGH_Z
+#define Pwm_FPB_TZB_ACTION EPWM_TZ_ACTION_HIGH_Z
+#define Pwm_FPB_INTERRUPT_SOURCE EPWM_INT_TBCTR_DISABLED
 
 //*****************************************************************************
 //
@@ -72,11 +107,19 @@ void Led_Blink_init();
 
 //*****************************************************************************
 //
+// SYNC Scheme Configurations
+//
+//*****************************************************************************
+
+//*****************************************************************************
+//
 // Board Configurations
 //
 //*****************************************************************************
 void	Board_init();
+void	EPWM_init();
 void	GPIO_init();
+void	SYNC_init();
 void	PinMux_init();
 
 //*****************************************************************************
