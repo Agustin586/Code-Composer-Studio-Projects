@@ -106,11 +106,15 @@ void main(void)
 
     // Configuracion de la señal
     SignalManager_Init(Signal);
+    SignalManager_ConfigFir(Signal);
 
     while(1)
     {
         //Blink();
-        SignalManager_TestSinePwm(Signal);
+        // SignalManager_TestSinePwm(Signal);
+        SignalManager_TestSineNoisePwm(Signal);
+        // SignalManager_TestSineWithNoise(Signal);
+        // DEVICE_DELAY_US(100);
     }
 }
 

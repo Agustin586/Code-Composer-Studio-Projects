@@ -13,6 +13,7 @@ src/SignalManager.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/
 src/SignalManager.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_types.h
 src/SignalManager.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_stdint.h
 src/SignalManager.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_stdint.h
+src/SignalManager.obj: C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/include/filtro.h
 src/SignalManager.obj: C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/device/driverlib.h
 src/SignalManager.obj: C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_memmap.h
 src/SignalManager.obj: C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/adc.h
@@ -93,6 +94,8 @@ src/SignalManager.obj: C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Proj
 src/SignalManager.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/math.h
 src/SignalManager.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_defs.h
 src/SignalManager.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_limits.h
+src/SignalManager.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdlib.h
+src/SignalManager.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdlibf.h
 
 ../src/SignalManager.c:
 
@@ -119,6 +122,8 @@ C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_types.
 C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_stdint.h:
 
 C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_stdint.h:
+
+C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/include/filtro.h:
 
 C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/device/driverlib.h:
 
@@ -279,4 +284,8 @@ C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/math.h:
 C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_defs.h:
 
 C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_limits.h:
+
+C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdlib.h:
+
+C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdlibf.h:
 

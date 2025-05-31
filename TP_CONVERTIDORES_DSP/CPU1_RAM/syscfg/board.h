@@ -88,7 +88,7 @@ extern "C"
 #define Pwm_FPB_COUNTER_MODE EPWM_COUNTER_MODE_UP_DOWN
 #define Pwm_FPB_TBPHS 0
 #define Pwm_FPB_CMPA 1250
-#define Pwm_FPB_CMPB 0
+#define Pwm_FPB_CMPB 1250
 #define Pwm_FPB_CMPC 0
 #define Pwm_FPB_CMPD 0
 #define Pwm_FPB_DBRED 0

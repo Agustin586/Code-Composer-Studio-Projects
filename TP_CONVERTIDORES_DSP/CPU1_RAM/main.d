@@ -93,6 +93,7 @@ main.obj: C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVE
 main.obj: syscfg/c2000ware_libraries.h
 main.obj: ../include/SignalManager.h
 main.obj: C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/include/pwm.h
+main.obj: C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/include/filtro.h
 main.obj: C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/device/device.h
 
 ../main.c:
@@ -280,6 +281,8 @@ syscfg/c2000ware_libraries.h:
 ../include/SignalManager.h:
 
 C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/include/pwm.h:
+
+C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/include/filtro.h:
 
 C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/device/device.h:
 

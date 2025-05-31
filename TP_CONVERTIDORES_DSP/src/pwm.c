@@ -15,6 +15,13 @@ extern void pwmDuty(PwmObject_t* this)
     return;
 }
 
+extern void pwmDutyB(PwmObject_t* this)
+{
+    EPWM_setCounterCompareValue(Pwm_FPB_BASE, EPWM_COUNTER_COMPARE_B, this->duty);
+
+    return;
+}
+
 extern void pwmSetFreq(PwmObject_t* this)
 {
 

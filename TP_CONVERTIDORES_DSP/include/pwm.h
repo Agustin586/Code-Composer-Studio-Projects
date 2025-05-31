@@ -12,6 +12,7 @@ typedef struct {
 // Publics:
 extern void pwmInit(PwmObject_t* this);
 extern void pwmDuty(PwmObject_t* this);
+extern void pwmDutyB(PwmObject_t* this);
 extern void pwmSetFreq(PwmObject_t* this);
 
 #endif

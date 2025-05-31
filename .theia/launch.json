@@ -8,6 +8,13 @@
             "projectInfo": {
                 "name": "TP_CONVERTIDORES_DSP",
                 "resourceId": "/TP_CONVERTIDORES_DSP"
+            },
+            "debuggerSettings": {
+                "targetConfigs/TMS320F28377D.ccxml": {
+                    "Texas Instruments XDS100v2 USB Debug Probe_0/C28xx_CPU1": {
+                        "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues>\n\n  <property id=\"ResetOnRestart\">\n    <curValue>1</curValue>\n  </property>\n\n  <property id=\"AutoResetOnConnect\">\n    <curValue>1</curValue>\n  </property>\n\n</PropertyValues>\n"
+                    }
+                }
             }
         }
     ]
