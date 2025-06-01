@@ -80,6 +80,21 @@ extern "C"
 
 //*****************************************************************************
 //
+// ADC Configurations
+//
+//*****************************************************************************
+#define ADC_Sine_BASE ADCA_BASE
+#define ADC_Sine_RESULT_BASE ADCARESULT_BASE
+#define ADC_Sine_SOC0 ADC_SOC_NUMBER0
+#define ADC_Sine_FORCE_SOC0 ADC_FORCE_SOC0
+#define ADC_Sine_SAMPLE_WINDOW_SOC0 700
+#define ADC_Sine_TRIGGER_SOURCE_SOC0 ADC_TRIGGER_EPWM1_SOCA
+#define ADC_Sine_CHANNEL_SOC0 ADC_CH_ADCIN13
+void ADC_Sine_init();
+
+
+//*****************************************************************************
+//
 // EPWM Configurations
 //
 //*****************************************************************************
@@ -95,7 +110,7 @@ extern "C"
 #define Pwm_FPB_DBFED 0
 #define Pwm_FPB_TZA_ACTION EPWM_TZ_ACTION_HIGH_Z
 #define Pwm_FPB_TZB_ACTION EPWM_TZ_ACTION_HIGH_Z
-#define Pwm_FPB_INTERRUPT_SOURCE EPWM_INT_TBCTR_DISABLED
+#define Pwm_FPB_INTERRUPT_SOURCE EPWM_INT_TBCTR_U_CMPA
 
 //*****************************************************************************
 //
@@ -104,6 +119,18 @@ extern "C"
 //*****************************************************************************
 #define Led_Blink 31
 void Led_Blink_init();
+
+//*****************************************************************************
+//
+// INTERRUPT Configurations
+//
+//*****************************************************************************
+
+// Interrupt Settings for INT_ADC_Sine_1
+// ISR need to be defined for the registered interrupts
+#define INT_ADC_Sine_1 INT_ADCA1
+#define INT_ADC_Sine_1_INTERRUPT_ACK_GROUP INTERRUPT_ACK_GROUP1
+extern __interrupt void INT_ADC_Sine_1_ISR(void);
 
 //*****************************************************************************
 //
@@ -117,8 +144,10 @@ void Led_Blink_init();
 //
 //*****************************************************************************
 void	Board_init();
+void	ADC_init();
 void	EPWM_init();
 void	GPIO_init();
+void	INTERRUPT_init();
 void	SYNC_init();
 void	PinMux_init();
 

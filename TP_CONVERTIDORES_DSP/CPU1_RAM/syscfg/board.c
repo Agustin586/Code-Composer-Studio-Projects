@@ -49,8 +49,10 @@ void Board_init()
 
 	PinMux_init();
 	SYNC_init();
+	ADC_init();
 	EPWM_init();
 	GPIO_init();
+	INTERRUPT_init();
 
 	EDIS;
 }
@@ -81,6 +83,73 @@ void PinMux_init()
 	GPIO_setPinConfig(GPIO_31_GPIO31);
 
 }
+
+//*****************************************************************************
+//
+// ADC Configurations
+//
+//*****************************************************************************
+void ADC_init(){
+	ADC_Sine_init();
+}
+
+void ADC_Sine_init(){
+	//
+	// Configures the analog-to-digital converter module prescaler.
+	//
+	ADC_setPrescaler(ADC_Sine_BASE, ADC_CLK_DIV_4_0);
+	//
+	// Configures the analog-to-digital converter resolution and signal mode.
+	//
+	ADC_setMode(ADC_Sine_BASE, ADC_RESOLUTION_12BIT, ADC_MODE_SINGLE_ENDED);
+	//
+	// Sets the timing of the end-of-conversion pulse
+	//
+	ADC_setInterruptPulseMode(ADC_Sine_BASE, ADC_PULSE_END_OF_CONV);
+	//
+	// Powers up the analog-to-digital converter core.
+	//
+	ADC_enableConverter(ADC_Sine_BASE);
+	//
+	// Delay for 1ms to allow ADC time to power up
+	//
+	DEVICE_DELAY_US(500);
+	//
+	// SOC Configuration: Setup ADC EPWM channel and trigger settings
+	//
+	// Disables SOC burst mode.
+	//
+	ADC_disableBurstMode(ADC_Sine_BASE);
+	//
+	// Sets the priority mode of the SOCs.
+	//
+	ADC_setSOCPriority(ADC_Sine_BASE, ADC_PRI_SOC0_HIPRI);
+	//
+	// Start of Conversion 0 Configuration
+	//
+	//
+	// Configures a start-of-conversion (SOC) in the ADC and its interrupt SOC trigger.
+	// 	  	SOC number		: 0
+	//	  	Trigger			: ADC_TRIGGER_EPWM1_SOCA
+	//	  	Channel			: ADC_CH_ADCIN13
+	//	 	Sample Window	: 140 SYSCLK cycles
+	//		Interrupt Trigger: ADC_INT_SOC_TRIGGER_ADCINT1
+	//
+	ADC_setupSOC(ADC_Sine_BASE, ADC_SOC_NUMBER0, ADC_TRIGGER_EPWM1_SOCA, ADC_CH_ADCIN13, 140U);
+	ADC_setInterruptSOCTrigger(ADC_Sine_BASE, ADC_SOC_NUMBER0, ADC_INT_SOC_TRIGGER_ADCINT1);
+	//
+	// ADC Interrupt 1 Configuration
+	// 		Source	: ADC_SOC_NUMBER0
+	// 		Interrupt Source: enabled
+	// 		Continuous Mode	: disabled
+	//
+	//
+	ADC_setInterruptSource(ADC_Sine_BASE, ADC_INT_NUMBER1, ADC_SOC_NUMBER0);
+	ADC_clearInterruptStatus(ADC_Sine_BASE, ADC_INT_NUMBER1);
+	ADC_disableContinuousMode(ADC_Sine_BASE, ADC_INT_NUMBER1);
+	ADC_enableInterrupt(ADC_Sine_BASE, ADC_INT_NUMBER1);
+}
+
 
 //*****************************************************************************
 //
@@ -116,6 +185,10 @@ void EPWM_init(){
     EPWM_disableRisingEdgeDelayCountShadowLoadMode(Pwm_FPB_BASE);	
     EPWM_setFallingEdgeDelayCountShadowLoadMode(Pwm_FPB_BASE, EPWM_FED_LOAD_ON_CNTR_ZERO);	
     EPWM_disableFallingEdgeDelayCountShadowLoadMode(Pwm_FPB_BASE);	
+    EPWM_enableInterrupt(Pwm_FPB_BASE);	
+    EPWM_setInterruptSource(Pwm_FPB_BASE, EPWM_INT_TBCTR_U_CMPA);	
+    EPWM_enableADCTrigger(Pwm_FPB_BASE, EPWM_SOC_A);	
+    EPWM_setADCTriggerSource(Pwm_FPB_BASE, EPWM_SOC_A, EPWM_SOC_TBCTR_U_CMPA);	
 }
 
 //*****************************************************************************
@@ -134,6 +207,18 @@ void Led_Blink_init(){
 	GPIO_setControllerCore(Led_Blink, GPIO_CORE_CPU1);
 }
 
+//*****************************************************************************
+//
+// INTERRUPT Configurations
+//
+//*****************************************************************************
+void INTERRUPT_init(){
+	
+	// Interrupt Settings for INT_ADC_Sine_1
+	// ISR need to be defined for the registered interrupts
+	Interrupt_register(INT_ADC_Sine_1, &INT_ADC_Sine_1_ISR);
+	Interrupt_enable(INT_ADC_Sine_1);
+}
 //*****************************************************************************
 //
 // SYNC Scheme Configurations

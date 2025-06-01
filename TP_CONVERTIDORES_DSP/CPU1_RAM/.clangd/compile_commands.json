@@ -38,5 +38,10 @@
       "directory" : "C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/CPU1_RAM",
       "command"   : "clang++ -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP\" -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/device\" -I\"C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/CPU1_RAM/syscfg\" -DF2837xD=1 -xc",
       "file"      : "C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/src/filtro.c"
+   },
+   {
+      "directory" : "C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/CPU1_RAM",
+      "command"   : "clang++ -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP\" -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/device\" -I\"C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/CPU1_RAM/syscfg\" -DF2837xD=1 -xc",
+      "file"      : "C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/src/adc.c"
    }
 ]

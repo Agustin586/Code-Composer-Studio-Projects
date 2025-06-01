@@ -99,6 +99,17 @@ void main(void)
     C2000Ware_libraries_init();
 
     //
+    // Enable the temperature sensor and give it 500 us to power up
+    //
+    ASysCtl_enableTemperatureSensor();
+    DEVICE_DELAY_US(500);
+
+    //
+    // Enable ADC interrupt
+    //
+    Interrupt_enable(INT_ADCA1);
+
+    //
     // Enable Global Interrupt (INTM) and real time interrupt (DBGM)
     //
     EINT;

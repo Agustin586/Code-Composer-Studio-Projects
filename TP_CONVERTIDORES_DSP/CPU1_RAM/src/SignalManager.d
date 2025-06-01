@@ -90,6 +90,8 @@ src/SignalManager.obj: C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/up
 src/SignalManager.obj: C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_upp.h
 src/SignalManager.obj: C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/version.h
 src/SignalManager.obj: C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/driver_inclusive_terminology_mapping.h
+src/SignalManager.obj: C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/include/adc.h
+src/SignalManager.obj: C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/device/device.h
 src/SignalManager.obj: C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/device/device.h
 src/SignalManager.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/math.h
 src/SignalManager.obj: C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_defs.h
@@ -276,6 +278,10 @@ C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/inc/hw_upp.h:
 C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/version.h:
 
 C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/driver_inclusive_terminology_mapping.h:
+
+C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/include/adc.h:
+
+C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/device/device.h:
 
 C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/TP_CONVERTIDORES_DSP/device/device.h:
 

@@ -3,5 +3,9 @@
     {
       "path": ""
     }
-  ]
+  ],
+  "settings": {
+    "CCS.debug.watch.showType": true,
+    "CCS.debug.watch.showAddress": false
+  }
 }

@@ -3,6 +3,7 @@
 
 #include "include/pwm.h"
 #include "include/filtro.h"
+#include "include/adc.h"
 #include "driverlib.h"
 #include "device.h"
 #include "stdint.h"
@@ -11,6 +12,7 @@ typedef struct{
     // Public:
     PwmObject_t Pwm;
     FIRFilter_t Filtro;
+    Adc_t Adc;
 } SignalManager_t;
 
 // Public:

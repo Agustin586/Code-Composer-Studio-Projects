@@ -4,6 +4,7 @@
 "./device/F2837xD_CodeStartBranch.obj"
 "./device/device.obj"
 "./src/SignalManager.obj"
+"./src/adc.obj"
 "./src/filtro.obj"
 "./src/pwm.obj"
 "../2837xD_RAM_lnk_cpu1.cmd"

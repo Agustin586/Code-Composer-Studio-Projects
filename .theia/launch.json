@@ -16,6 +16,20 @@
                     }
                 }
             }
+        },
+        {
+            "name": "adc_ex3_temp_sensor",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "adc_ex3_temp_sensor",
+                "resourceId": "/adc_ex3_temp_sensor"
+            },
+            "launchSettings": {
+                "coresToLoadForProjectLaunch": [
+                    "C28xx_CPU1"
+                ]
+            }
         }
     ]
 }

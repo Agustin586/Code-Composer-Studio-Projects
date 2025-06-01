@@ -16,6 +16,7 @@ ORDERED_OBJS += \
 "./device/F2837xD_CodeStartBranch.obj" \
 "./device/device.obj" \
 "./src/SignalManager.obj" \
+"./src/adc.obj" \
 "./src/filtro.obj" \
 "./src/pwm.obj" \
 "../2837xD_RAM_lnk_cpu1.cmd" \
@@ -153,8 +154,8 @@ TP_CONVERTIDORES_DSP.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "syscfg\board.obj" "syscfg\c2000ware_libraries.obj" "main.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" "src\SignalManager.obj" "src\filtro.obj" "src\pwm.obj" 
-	-$(RM) "syscfg\board.d" "syscfg\c2000ware_libraries.d" "main.d" "device\device.d" "src\SignalManager.d" "src\filtro.d" "src\pwm.d" 
+	-$(RM) "syscfg\board.obj" "syscfg\c2000ware_libraries.obj" "main.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" "src\SignalManager.obj" "src\adc.obj" "src\filtro.obj" "src\pwm.obj" 
+	-$(RM) "syscfg\board.d" "syscfg\c2000ware_libraries.d" "main.d" "device\device.d" "src\SignalManager.d" "src\adc.d" "src\filtro.d" "src\pwm.d" 
 	-$(RM) "device\F2837xD_CodeStartBranch.d" 
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
 	-@echo 'Finished clean'

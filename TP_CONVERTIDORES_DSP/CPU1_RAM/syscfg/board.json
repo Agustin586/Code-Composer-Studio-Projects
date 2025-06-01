@@ -1,4 +1,8 @@
 {
     "interruptInfo" : [
+        {
+            "interruptName": "INT_ADC_Sine_1",
+            "interruptHandler": "INT_ADC_Sine_1_ISR"
+        }
     ]
 }

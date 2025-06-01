@@ -1,0 +1,17 @@
+[
+   {
+      "directory" : "C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor/CPU1_RAM",
+      "command"   : "clang++ -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor\" -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor/device\" -I\"C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/C2000Ware_5_04_00_00/libraries/calibration/hrpwm/F2837xD/include/\" -I\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor/CPU1_RAM/syscfg\" -xc",
+      "file"      : "C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor/adc_ex3_temp_sensor.c"
+   },
+   {
+      "directory" : "C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor/CPU1_RAM",
+      "command"   : "clang++ -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor\" -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor/device\" -I\"C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/C2000Ware_5_04_00_00/libraries/calibration/hrpwm/F2837xD/include/\" -I\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor/CPU1_RAM/syscfg\"",
+      "file"      : "C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor/device/F2837xD_CodeStartBranch.asm"
+   },
+   {
+      "directory" : "C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor/CPU1_RAM",
+      "command"   : "clang++ -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor\" -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor/device\" -I\"C:/ti/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/\" -I\"C:/ti/C2000Ware_5_04_00_00/libraries/calibration/hrpwm/F2837xD/include/\" -I\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -DDEBUG -DCPU1 -I\"C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor/CPU1_RAM/syscfg\" -xc",
+      "file"      : "C:/Users/aguat/Documents/GitHub/Code-Composer-Studio-Projects/adc_ex3_temp_sensor/device/device.c"
+   }
+]

@@ -62,7 +62,6 @@ const float firCoeffs[FIR_TAP_NUM] = {
     0.00052097592152740822
 };
 
-
 // Private
 #define SINE_TABLE_SIZE 100
 #define NOISE_AMPLITUDE 0.5f  // Nivel de ruido máximo
